@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+header {
+  text-align: center;
+}
+.grid-wrapper {
+  padding: 1rem;
+  background-color: beige;
+  border: 1px solid red;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-wrapper div {
+  padding: 3rem;
+  background-color: bisque;
+}
+.item7{
+  grid-column: span 2;
+  grid-row: span 3;
+} 
