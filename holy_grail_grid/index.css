@@ -1,0 +1,45 @@
+html {
+  box-sizing: border-box;
+}
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.holy {
+  display: grid;
+  height: 100vh;
+  width: auto;
+  grid-template-rows: 20% 60% 20%;
+  grid-gap: 5px;
+}
+header,
+footer,
+article {
+  display: grid; /* Makes the box a grid container */
+  place-items: center; /* Centers content Horizontally & Vertically */
+}
+header {
+  background-color: red;
+}
+section {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 2fr 5fr 2fr;
+}
+article:first-child {
+  background-color: blue;
+}
+article:nth-child(2) {
+  background-color: purple;
+}
+article:last-child {
+  background-color: green;
+}
+footer {
+  background-color: pink;
+}
